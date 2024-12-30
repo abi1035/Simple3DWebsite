@@ -1,0 +1,3 @@
+Add Mobile Friendly
+Add different environments and hide the options when it's different environments
+Add dropdown boxes instead of making it all display

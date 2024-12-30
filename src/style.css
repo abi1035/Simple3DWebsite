@@ -1,0 +1,314 @@
+html,
+body,
+#root
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: black;
+    color: wheat;
+    font-family: "Open Sans", serif;
+    margin: 0;
+    padding: 0;
+
+
+}
+
+.companyName{
+    display: flex;
+    /* border: 10px solid red; */
+    justify-content: center;
+   
+    
+
+}
+
+.companyNameDiv {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    color: white;
+    position: relative;
+    /* bottom: 22px; */
+    height: 100px;
+    z-index: 2;
+    margin-bottom: 0;
+    /* border: 10px solid blue; */
+}
+
+
+.parent {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    gap: 8px;
+    /* border: 10px solid red; */
+    margin-top: 0;
+}
+    
+.canvasDiv {
+    grid-column: span 3 / span 3;
+    grid-row: span 5 / span 5;
+    z-index: 1;
+    /* background-color: bisque; */
+    /* background-image: url('shoeBackground.jpg'); */
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 900px;
+}
+
+
+/* ------------------ Product Name -----------------------------*/
+
+.productNameDiv {
+    grid-column: span 3 / span 3;
+    grid-row: span 2 / span 2;
+    grid-column-start: 4;
+    /* border: 10px solid red; */
+    /* background-color: rgb(0, 0, 0); */
+    /* color: whitesmoke; */
+    
+}
+.productNameComponent{
+  display: none;
+}
+
+.div3 {
+    grid-column: span 3 / span 3;
+    grid-column-start: 4;
+    grid-row-start: 3;
+    
+}
+
+/* ----------------- COLORS / MODEL ----------------- */
+
+.colorsDiv {
+    grid-column: span 3 / span 3;
+    grid-column-start: 4;
+    grid-row-start: 4;
+    z-index: 2; 
+    /* border: 10px solid red; */
+}
+
+.productColorDiv{
+    /* border: 10px solid red; */
+    display: flex;
+    justify-content:space-around;
+    /* align-items: end; */
+    position: relative;
+    bottom: -2px;
+    gap: 20px;
+}
+
+.wholeProductColorDiv{
+    position: relative;
+    bottom: 90px;
+}
+
+.div5 {
+    grid-column: span 3 / span 3;
+    grid-column-start: 4;
+    grid-row-start: 5;
+}
+
+.div6 {
+    grid-column: span 6 / span 6;
+    grid-row-start: 6;
+}
+
+.wholeModifyDiv{
+    /* border: 10px solid red; */
+    position: fixed;
+    top: 770px;
+    right: 330px;
+    display: flex;
+    height: 80px;
+    align-items: end;
+    justify-content: end;
+    z-index: 2;
+    flex-direction: column;
+    gap: 15px;
+    
+}
+
+
+.modifyButton{
+    /* position: relative; */
+    height: 50px;
+    width: 160px;
+    /* right: 520px; */
+    /* border: 10px solid red; */
+}
+
+.modifyButton.active {
+    border: 3px solid rgb(95, 202, 245);
+}
+
+.backgroundMapChangeButton{
+    width: 56px;
+    height: 26px;
+    border-radius: 2px;
+}
+
+.backgroundMapChangeButtonDiv{
+    display: flex;
+    /* justify-content: space-between; */
+    gap:10px;
+    /* border: 10px solid red; */
+    /* width: 400px; */
+}
+
+.backgroundMapChangeButton.active{
+    border: 2px solid rgb(95, 202, 245);
+}
+
+
+/* --------------------- SIZE ------------------------- */
+
+
+
+.wholeSizeComponent{
+    position: relative;
+    top: -140px;
+    z-index: 2;
+    /* border: 10px solid red;  */
+
+}
+       
+.sizeDropdown {
+    width: 150px;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #f9f9f9;
+    transition: all 0.3s ease;
+  }
+  
+  .sizeDropdown:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+
+.productColorButton {
+    /* background-color: #04AA6D; */
+    border: 2px solid black;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    width: 200px;
+    height: 90px;
+    /* border-radius: 50%; */
+}
+
+.productColorButton:hover{
+    background-color: #f0f0f000;
+}
+
+.productColorButton.active{
+    
+    border: 3px solid rgb(95, 202, 245);
+}
+
+.blueButton{
+    position: relative;
+    overflow: hidden;
+    
+}
+
+.blueButton img{
+    position: absolute;
+    top: 40%; /* Vertical center */
+    left: 50%; /* Horizontal center */
+    transform: translate(-50%, -50%); /* Shift the image by -50% of its own size */
+    width: 100%;
+    height: auto; /* Maintain aspect ratio */
+    object-fit: cover;
+    pointer-events: none;
+}
+
+
+.redButton{
+    position: relative;
+    overflow: hidden;
+    
+}
+
+.redButton img{
+    position: absolute;
+    top: 40%; /* Vertical center */
+    left: 50%; /* Horizontal center */
+    transform: translate(-50%, -50%); /* Shift the image by -50% of its own size */
+    width: 100%;
+    height: auto; /* Maintain aspect ratio */
+    object-fit: cover;
+    pointer-events: none;
+}
+
+
+
+
+
+
+.blackButton {
+    position: relative;
+    overflow: hidden;
+}
+
+.blackButton img{
+    position: absolute;
+    top: 20%; /* Vertical center */
+    left: 50%; /* Horizontal center */
+    transform: translate(-50%, -50%); /* Shift the image by -50% of its own size */
+    width: 100%;
+    height: auto; /* Maintain aspect ratio */
+    object-fit: cover;
+    pointer-events: none;
+}
+
+
+
+/* ------------------------- Rating ------------------------------ */
+
+.wholeRatingDiv{
+    position: relative;
+    bottom: 90px;
+}
+
+
+.changeEnvironmentButton{
+    height: 50px;
+    width: 160px;
+}
+
+.changeEnvironmentButton.active{
+    border: 3px solid rgb(95, 202, 245);
+    
+}
+
+
